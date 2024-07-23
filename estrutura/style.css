@@ -1,0 +1,339 @@
+/* -------------------------------------------FONTES------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* -------------------------------------------ESTRUTURA------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+    /* -------------------------------------------ANIMAÇÕES------------------------------------------- */
+
+@keyframes anima {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes anima-a {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes anima-b {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.02);
+    }
+}
+
+    /* -------------------------------------------CABECALHO------------------------------------------- */
+
+
+nav{
+    background-color: rgb(219, 201, 38);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+
+.img{
+    height: 100px;
+    padding: 12px;
+}
+
+.contato{
+    height: 50px;
+    padding: 11px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
+    padding-right: 10px;
+}
+
+.contato:hover{
+    animation-name: anima;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: linear-gradient(222deg, rgb(61, 149, 221) 30%, rgb(87, 102, 236) 80%);
+}
+
+
+.carrinho{
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
+    padding-right: 13px;
+}
+
+
+.carrinho:hover{
+    animation-name: anima;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: linear-gradient(222deg, rgb(61, 149, 221) 30%, rgb(87, 102, 236) 80%);
+}
+
+
+.search-box{
+    background:  rgb(255, 255, 255);
+    border-radius: 40px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.lupa-branca{
+    display: none;
+}
+
+.pesquisa{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    width: 0;
+    padding: 0;
+    transition: 0.4s;
+    color: rgb(0, 0, 0);
+
+}
+
+.botao{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.search-box:hover > .pesquisa {
+    width: 320px;
+    padding-left: 20px;
+}
+
+.perfil{
+    height: 50px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.perfil:hover{
+    animation-name: anima;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: linear-gradient(222deg, rgb(61, 149, 221) 30%, rgb(87, 102, 236) 80%);
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.produtos-lista{
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+.produtos-lista:hover{
+    color: white;
+    background: linear-gradient(222deg, rgb(61, 149, 221) 30%, rgb(87, 102, 236) 80%);
+}
+
+
+.li:hover{
+    animation-name: anima-a;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.produtos{
+    margin-left: -40px;
+}
+
+.informacoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(222deg, rgb(61, 149, 221) 30%, rgb(87, 102, 236) 80%);
+    color: aliceblue;
+    font-family:"Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.cartao{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.cartao > img{
+    height: 40px;
+}
+
+
+.entrega{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.entrega > img{
+    height: 40px;
+}
+
+.seguranca{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.seguranca > img{
+    height: 30px;
+}
+
+
+    /* -------------------------------------------FIM CABECALHO------------------------------------------- */
+
+    /* -------------------------------------------CORPO (MENU)------------------------------------------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    gap: 30px;
+}
+
+.card{
+    background: white;
+    align-items: center;
+    display: flex;
+    border-radius: 30px;
+    width: 600px;
+
+}
+
+.card > a > img{
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    border-radius: 30px;
+    margin: 15px 10PX;
+    box-shadow: 0 0 6px;
+    margin-left: 15px;
+}   
+
+.card > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card > a > img:hover{
+    animation-name: anima-b;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.card > div{
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.card > div > h1{
+    padding-bottom: 20px;
+    font-size: 34px;
+}
+
+.card > div > h2{
+    font-size: 17px;
+}
+
+.card > div > div > button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 220px;
+    box-shadow: 1px 1px 10px rgb(139, 138, 138);
+}
+.card > div > div > button > img{
+    height: 30px;
+}
+
+.card > div > p > b{
+    font-size: 20px;
+}
+
+    /* -------------------------------------------FIM CORPO (MENU)------------------------------------------- */
